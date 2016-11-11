@@ -12,7 +12,7 @@
 - [FILA 2, POSIÇÃO 4] Flauta				(ALT + F)
 	
 - [FILA 3, POSIÇÃO 1] Joao Kleber				(ALT + J)
-- [FILA 3, POSIÇÃO 2] Jeremias - Matarra 1000   (ALT + 1)
+- [FILA 3, POSIÇÃO 2] Matarra 1000 				(ALT + 1)
 - [FILA 3, POSIÇÃO 3] Ta vazii 					(ALT + 0)
 - [FILA 3, POSIÇÃO 4] Hoje Não					(ALT + N)	
 
@@ -27,3 +27,6 @@
 
 ##### Demo
 -URL: https://s3-sa-east-1.amazonaws.com/butoneira/home.html
+
+##### Fontes de Audio
+-https://www.myinstants.com
