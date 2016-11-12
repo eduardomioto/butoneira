@@ -10,6 +10,10 @@
 		sound();
 	 });
 	 
+	 function showHelp(){
+		generate('information', $(".help").html());
+	 }
+	 
 	 function playSound(audioId){
     	console.log(audioId)
 		if($(audioId)[0].currentTime > 0){
@@ -21,6 +25,8 @@
 	 }
 	 
 	 function sound(){
+		jQuery(document).bind('keydown', 'ctrl+h',function (evt){showHelp(); return false; });
+		 
 		jQuery(document).bind('keydown', 'alt+p',function (evt){playSound("#audio1"); return false; });
 		jQuery(document).bind('keydown', 'alt+h',function (evt){playSound("#audio2"); return false; });
 		jQuery(document).bind('keydown', 'alt+g',function (evt){playSound("#audio3"); return false; });
@@ -43,4 +49,28 @@
 		jQuery(document).bind('keydown', 'alt+m',function (evt){playSound("#audio18"); return false; });	
 		
 	 }
+	 
+	 
+	 function generate(type, text) {
+
+         var n = noty({
+             text        : text,
+             type        : type,
+             dismissQueue: true,
+             layout      : 'topRight',
+             closeWith   : ['click'],
+             theme       : 'relax',
+             maxVisible  : 10,
+             animation   : {
+                 open  : 'animated bounceInRight',
+                 close : 'animated bounceOutRight',
+                 easing: 'swing',
+                 speed : 500
+             }
+         });
+     }
+
+     $(document).ready(function () {
+         
+     });
 	 

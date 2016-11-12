@@ -30,5 +30,12 @@
 ##### Demo
 -URL: https://s3-sa-east-1.amazonaws.com/butoneira/home.html
 
-##### Fontes de Audio
--https://www.myinstants.com
+##### Refêrencias
+- Audios: https://www.myinstants.com
+- Botões: meBaze ( http://mebaze.com/ )
+
+##### Inspirações:
+- https://graphicriver.net/item/audiopad-touch-user-interinterface/163862
+- https://graphicriver.net/item/royce-gui-graphical-user-interface/411333
+- https://graphicriver.net/item/controlled-gui-graphical-user-interface/307799
+
