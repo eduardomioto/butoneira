@@ -14,6 +14,14 @@
 		generate('information', $(".help").html());
 	 }
 	 
+	 function showTitles(){
+		if($(".row p").is(':visible')) {
+			$(".row p").hide()
+		}else{
+			$(".row p").show()
+		}
+	 }
+	 
 	 function playSound(audioId){
     	console.log(audioId)
 		if($(audioId)[0].currentTime > 0){
@@ -26,7 +34,8 @@
 	 
 	 function sound(){
 		jQuery(document).bind('keydown', 'ctrl+h',function (evt){showHelp(); return false; });
-		 
+		jQuery(document).bind('keydown', 'ctrl+i',function (evt){showTitles(); return false; });
+		
 		jQuery(document).bind('keydown', 'alt+p',function (evt){playSound("#audio1"); return false; });
 		jQuery(document).bind('keydown', 'alt+h',function (evt){playSound("#audio2"); return false; });
 		jQuery(document).bind('keydown', 'alt+g',function (evt){playSound("#audio3"); return false; });

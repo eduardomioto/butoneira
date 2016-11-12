@@ -1,6 +1,11 @@
-.row{
+.row:first-of-type{
   margin-top: 35px;
-  margin-bottom: 35px
+  min-height: 160px
+}
+
+.row{
+  margin-top: 3px;
+  min-height: 160px
 }
 
 .help{
@@ -15,4 +20,10 @@
 .helpTitle{
 	font-size: 18px;
     text-align: center;
+}
+
+.row p{
+	color: #838488;
+	display: none;
+	margin-bottom: 0px;
 }
