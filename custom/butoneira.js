@@ -1,13 +1,18 @@
-
 	 $(document).ready(function() {
 
-		$( 'img[id^="btnSound"]' ).click(function() { 
-			var refId = $(this).attr('id').match(/\d+/)[0];
-			var audioId = "#audio" + refId; 
-			playSound(audioId)
-		;});	
-		
-		sound();
+		 $( 'img[id^="btnSound"]' ).click(function() { 
+				var refId = $(this).attr('id').match(/\d+/)[0];
+				var audioId = "#audio" + refId; 
+				playSound(audioId)
+		 });	
+			
+		 $('audio[id^="audio"]').bind('ended', function(){
+			 var refId = $(this).attr('id').match(/\d+/)[0];
+			 var buttonId = "#btnSound" + refId; 
+			 $(buttonId).removeClass( "musicButtonPlaying" ).addClass("musicButton");
+		 });	
+	 
+		 sound();
 	 });
 	 
 	 function showHelp(){
@@ -23,15 +28,19 @@
 	 }
 	 
 	 function playSound(audioId){
-    	console.log(audioId)
+    	var refId = $(audioId).attr('id').match(/\d+/)[0];
+    	var buttonId = "#btnSound" + refId; 
+    	
 		if($(audioId)[0].currentTime > 0){
 			$(audioId)[0].pause();
 			$(audioId)[0].currentTime = 0.0;
+			$(buttonId).removeClass( "musicButtonPlaying" ).addClass("musicButton");
 		}else{
 			$(audioId)[0].play();
+			$(buttonId).removeClass( "musicButton" ).addClass("musicButtonPlaying");
 		}
 	 }
-	 
+	  
 	 function sound(){
 		jQuery(document).bind('keydown', 'ctrl+h',function (evt){showHelp(); return false; });
 		jQuery(document).bind('keydown', 'ctrl+i',function (evt){showTitles(); return false; });
@@ -57,8 +66,7 @@
 		jQuery(document).bind('keydown', 'alt+e',function (evt){playSound("#audio17"); return false; });	
 		jQuery(document).bind('keydown', 'alt+m',function (evt){playSound("#audio18"); return false; });	
 		
-	 }
-	 
+	 }	 
 	 
 	 function generate(type, text) {
 
@@ -78,8 +86,3 @@
              }
          });
      }
-
-     $(document).ready(function () {
-         
-     });
-	 

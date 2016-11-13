@@ -1,29 +1,47 @@
-.row:first-of-type{
-  margin-top: 35px;
-  min-height: 160px
+.row:first-of-type {
+	margin-top: 35px;
+	min-height: 175px
 }
 
-.row{
-  margin-top: 3px;
-  min-height: 160px
+.row {
+	margin-top: 3px;
+	min-height: 175px
 }
 
-.help{
+.help {
 	display: none;
 }
 
-.helpContent span{
+.helpContent span {
 	text-align: right;
-    float: right;
+	float: right;
 }
 
-.helpTitle{
+.helpTitle {
 	font-size: 18px;
-    text-align: center;
+	text-align: center;
 }
 
-.row p{
+.row p {
 	color: #838488;
 	display: none;
 	margin-bottom: 0px;
+}
+
+.musicButton {
+	content: url("dial-azul_glow1.png");
+	height: 153px;
+	width: 140px;
+}
+
+.musicButton:hover {
+	content: url("dial-azul_glow3.png");
+	height: 153px;
+	width: 140px;
+}
+
+.musicButtonPlaying {
+	content: url("dial-verde_glow3.png");
+	height: 153px;
+	width: 140px;
 }
