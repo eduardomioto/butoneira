@@ -66,6 +66,17 @@
 		jQuery(document).bind('keydown', 'alt+e',function (evt){playSound("#audio17"); return false; });	
 		jQuery(document).bind('keydown', 'alt+m',function (evt){playSound("#audio18"); return false; });	
 		
+		jQuery(document).bind('keydown', 'alt+5',function (evt){playSound("#audio19"); return false; });	
+		jQuery(document).bind('keydown', 'alt+6',function (evt){playSound("#audio20"); return false; });	
+		jQuery(document).bind('keydown', 'alt+w',function (evt){playSound("#audio21"); return false; });	
+		jQuery(document).bind('keydown', 'alt+7',function (evt){playSound("#audio22"); return false; });	
+		jQuery(document).bind('keydown', 'alt+l',function (evt){playSound("#audio23"); return false; });	
+		jQuery(document).bind('keydown', 'alt+s',function (evt){playSound("#audio24"); return false; });	
+		
+		jQuery(document).bind('keydown', 'shift+h',function (evt){playSound("#audio25"); return false; });	
+		jQuery(document).bind('keydown', 'shift+e',function (evt){playSound("#audio26"); return false; });	
+		jQuery(document).bind('keydown', 'shift+t',function (evt){playSound("#audio27"); return false; });	
+		jQuery(document).bind('keydown', 'shift+x',function (evt){playSound("#audio28"); return false; });	
 	 }	 
 	 
 	 function generate(type, text) {
