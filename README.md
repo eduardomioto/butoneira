@@ -9,7 +9,6 @@
 - Robot
 - Palmas
 - Volta o Cão Arrependido
-- 
 
 ##### Demo
 - URL: https://s3-sa-east-1.amazonaws.com/butoneira/home.html
