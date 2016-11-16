@@ -76,7 +76,8 @@
 		jQuery(document).bind('keydown', 'shift+h',function (evt){playSound("#audio25"); return false; });	
 		jQuery(document).bind('keydown', 'shift+e',function (evt){playSound("#audio26"); return false; });	
 		jQuery(document).bind('keydown', 'shift+t',function (evt){playSound("#audio27"); return false; });	
-		jQuery(document).bind('keydown', 'shift+x',function (evt){playSound("#audio28"); return false; });	
+		jQuery(document).bind('keydown', 'shift+x',function (evt){playSound("#audio28"); return false; });
+		jQuery(document).bind('keydown', 'alt+a',function (evt){playSound("#audio29"); return false; });
 	 }	 
 	 
 	 function generate(type, text) {
